@@ -3,121 +3,150 @@
 <html lang="en">
 <head>
   <title>Home Page</title>
-  <style>
-    table {
-      border-width: 100%; 
-      border-style: solid;
-      text-align: center;
-    }
 
-    table, th, td, tr {
-      border-collapse: collapse;
-      border: 2px solid black;
-      width:40%;
-      height: 20px;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    tr:hover {
-      background-color: #319613; opacity: .9;
-    } 
-    th {
-    background-color: white;
-    color: black;
-    }
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  </style>
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sandstone/bootstrap.min.css">
+
+    <style>
+
+      .mycolor {
+        background-color: #FEE911;
+        border-style: solid;
+        border-width: 1px;
+      }
+  
+    </style>
+
     <meta charset="utf-8">
 
 </head>
 <body>
 	<header>
-      <nav>
-          <ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand" href="#">Simpson Garden Center</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <li>
-            <a href="about.html">About Us</a>
-        </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <li>
-          <a href="tipstricks.html">Tips & Tricks</a>
-         </li>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
 
-        <li>
-            <a href="toptenplants.html">Top 10 Plants For Your Garden</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
 
-        <li> 
-          <a href="tools.html">Beginner Tools</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tipstricks.html">Tips and Tricks</a>
+            </li>
 
-        <li>
-          <a href=seeds.html>Seeds</a>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="toptenplants.html">Top Ten Plants For Your Garden</a>
+            </li>
 
-      </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="tools.html">Beginner Tools</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="seeds.html">Seeds</a>
+            </li>
+          </ul>
+
+        </div>
       </nav>
 
-		<h1>Simpson Garden Center</h1>
 	</header>
+  <div class="container">
 	
-<h2 style="font-size: 25pt; letter-spacing: 2px;">Home Page</h2>
+  <section>
+    <div class="p-3 mb-2 bg-light text-dark">
+<h1>Home Page</h1>
 
 
-<p style=" color:#319613; font-size:25pt; text-align-last: center;"><em><b>Welcome to the Simpson Garden Center!</b></em></p>
+<p><em><b>Welcome to the Simpson Garden Center!</b></em></p>
 
-<table align="center">
-  <tr>
-    <td>Day</td>
-    <td>Hours</td>
+
+
+  <table class="table table-hover">
+    
+    <tr>
+    <th>Day</th>
+    <th>Hours</th>
   </tr>
 
-  <tr>
+
+<tbody>
+  <tr class="table-info">
     <td>Sunday</td>
     <td>8:00 a.m.-6:00 p.m.</td>
   </tr>
 
-  <tr>
+  <tr class="table-info">
     <td>Monday</td>
     <td>7:00 a.m.-8:00 p.m.</td>
   </tr>
 
-  <tr>
+  <tr class="table-info">
     <td>Tuesday</td>
     <td>7:00 a.m.-8:00 p.m.</td>
   </tr>
 
-  <tr>
+  <tr class="table-info">
     <td>Wednesday</td>
     <td>7:00 a.m.-8:00 p.m.</td>
   </tr>
 
-  <tr>
+  <tr class="table-info">
     <td>Thursday</td>
     <td>7:00 a.m.-8:00 p.m.</td>
   </tr>
 
-  <tr>
+  <tr class="table-info">
     <td>Friday</td>
     <td>7:00 a.m.-8:00 p.m.</td>
   </tr>
 
-  <tr>
+  <tr class="table-info">
     <td>Saturday</td>
     <td>7:00 a.m.- 6:00 p.m.</td>
   </tr>
+</tbody>
 
 </table>
+<div class="alert alert-info" role="alert">
+  <strong>Don't forget, we have a sale on roses!</strong> Buy 1 pack of seeds, get 2 free! Offer Ends 10/22/2020. 
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
-  <p id="home">We have everything you need to know about our store on our website- everything from garden tools, to seeds, to store hours.</p>
-    <p id="home">The Simpson Garden Center takes pride in our garden, as well as our community. Do you want to learn how to garden? Are you an expert? Or do you have no idea where to start. The Simpson Garden Center is for everyone from all levels of expertise. We will help anyone we can.</p>
-      <p id="home">Our trained gardeners are always here to help, just stop by, and you will find a helping hand there to assist you in your gardening endevours.</p>
+  <p>We have everything you need to know about our store on our website- everything from garden tools, to seeds, to store hours.</p>
+    <p>The Simpson Garden Center takes pride in our garden, as well as our community. Do you want to learn how to garden? Are you an expert? Or do you have no idea where to start. The Simpson Garden Center is for everyone from all levels of expertise. We will help anyone we can.</p>
+      <p>Our trained gardeners are always here to help, just stop by, and you will find a helping hand there to assist you in your gardening endevours.</p>
 
-<p id="home"> If you want to know more about us, feel free to visit our About page. Our store hours are listed. Please feel free to drop in any time we are open. </p>
+<p> If you want to know more about us, feel free to visit our About page. Our store hours are listed. Please feel free to drop in any time we are open. </p>
 
+<button type="button" class="btn btn-secondary btn-lg">Click to Plant a Tree</button>
+</div>
+</section>
 
 <footer>
 Copyright 2020 Skylar Warmbier
 </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
